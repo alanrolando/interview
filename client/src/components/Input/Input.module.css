@@ -1,0 +1,47 @@
+.inputContainer {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.inputLabel {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 0.9vw;
+  font-weight: 600;
+  color: rgb(55, 55, 55);
+}
+
+.input {
+  height: 4vh;
+  font-size: 1vw;
+  width: 15vw;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 0 0.5vw;
+  transition: all 0.5s;
+  color: black;
+  margin-top: 0.5vh;
+}
+
+.input:disabled {
+  border: 0;
+  padding: 0;
+  transition: all 0.5s;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .inputLabel {
+    font-size: 4vw;
+  }
+
+  .input {
+    height: 4vh;
+    font-size: 4.5vw;
+    width: 75vw;
+    padding: 0 2vw;
+    margin-top: 1vh;
+  }
+}

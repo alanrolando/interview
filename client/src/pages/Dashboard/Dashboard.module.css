@@ -1,0 +1,205 @@
+.dashboard,
+.form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fb;
+  color: black;
+}
+
+.logOutBtn {
+  position: fixed;
+  right: 1vw;
+  top: 1vw;
+  background: rgb(255, 50, 50);
+  border: 0;
+  color: white;
+}
+
+.balanceCard {
+  background-color: white;
+  width: 25vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-right: 1.5vw;
+  box-shadow: 10px 10px 12px -8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 10px 10px 12px -8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 12px -8px rgba(0, 0, 0, 0.1);
+}
+
+.userImg {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 204, 204);
+  border: 0;
+  color: white;
+}
+
+.name {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 2.5vh;
+}
+
+.balanceEditPanel,
+.balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bLabel {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.amount {
+  margin-top: 0vh;
+  margin-bottom: 5vh;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.editBtn {
+  background-color: #2a94f2;
+  color: white;
+  width: 20vw;
+  border: 0;
+}
+
+.btnsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.saveBtn {
+  background-color: #2af245;
+}
+
+.backBtn {
+  margin-top: 2vh;
+  background: rgb(255, 50, 50);
+}
+
+.saveBtn:disabled {
+  background-color: rgb(235, 235, 235);
+  color: grey;
+}
+
+.editBtn:hover,
+.logOutBtn:hover {
+  opacity: 0.75;
+}
+
+.infoCard {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: white;
+  flex-wrap: wrap;
+  gap: 1vw;
+  box-sizing: border-box;
+  padding: 3.5vw;
+  box-shadow: 10px 10px 12px -8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 10px 10px 12px -8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 12px -8px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard,
+  .form {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .balanceCard {
+    background-color: white;
+    width: 90vw;
+    height: 35vh;
+    margin-right: 0;
+    position: relative;
+  }
+
+  .userImg {
+    width: 12vh;
+    height: 12vh;
+  }
+
+  .name {
+    font-size: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .bLabel {
+    font-size: 3vw;
+  }
+
+  .amount {
+    margin-top: 0vh;
+    margin-bottom: 2.5vh;
+    font-size: 7vw;
+  }
+
+  .balanceEditPanel {
+    width: 100%;
+    position: relative;
+  }
+
+  .btnsContainer {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .backBtn {
+    margin: 0;
+  }
+
+  .editBtn {
+    width: 35vw;
+    height: 4vh;
+    padding: 0;
+    font-size: 4vw;
+  }
+
+  .infoCard {
+    width: 90vw;
+    height: 60vh;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 3.5vw;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    gap: 3vw;
+  }
+
+  .logOutBtn {
+    position: absolute;
+    right: 0;
+    top: 2vw;
+    color: rgb(255, 50, 50);
+    background: transparent;
+    border: 0;
+    font-size: 3.5vw;
+  }
+}

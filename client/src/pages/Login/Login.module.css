@@ -1,0 +1,60 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.logo {
+  width: 15vw;
+  padding-bottom: 10vh;
+}
+
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginInput,
+.loginBtn {
+  width: 20vw;
+  height: 5vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.loginBtn {
+  background-color: #2a94f2;
+  color: white;
+}
+
+.loginBtn:hover {
+  opacity: 0.75;
+}
+
+.loginInput {
+  margin-bottom: 2.5vh;
+  background-color: transparent;
+  color: black;
+  padding: 0 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 40vw;
+    padding-bottom: 7.5vh;
+  }
+
+  .loginInput,
+  .loginBtn {
+    width: 80vw;
+    height: 5vh;
+    box-sizing: border-box;
+  }
+}

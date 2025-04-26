@@ -1,0 +1,48 @@
+{
+  "first": {
+    "label": "First Name",
+    "type": "text",
+    "placeholder": "Enter first name"
+  },
+  "last": {
+    "label": "Last Name",
+    "type": "text",
+    "placeholder": "Enter last name"
+  },
+  "age": {
+    "label": "Age",
+    "type": "text",
+    "placeholder": "Age",
+    "maxLength": 3
+  },
+  "eyeColor": {
+    "label": "Eye Color",
+    "type": "text",
+    "placeholder": "Enter eye color"
+  },
+  "company": {
+    "label": "Company",
+    "type": "text",
+    "placeholder": "Enter company name"
+  },
+  "address": {
+    "label": "Address",
+    "type": "text",
+    "placeholder": "Enter Address"
+  },
+  "phone": {
+    "label": "Phone",
+    "type": "phone",
+    "placeholder": "Enter phone"
+  },
+  "email": {
+    "label": "Email",
+    "type": "mail",
+    "placeholder": "Enter email"
+  },
+  "password": {
+    "label": "Password",
+    "type": "password",
+    "placeholder": "Enter password"
+  }
+}
